@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meta Lads NFT | A collection of 10,001 randomized and uniquely built 3D Lads with the intention of opening our genesis assets to the public domain</title>
+        <meta name="description" content="Crazy Duckys is a collection of 555 Ducky NFTs built on the Polygon Blockchain who need a new home (and pond)." />
+        <meta name="keywords" content="NFT, Ducky, Duckys, Polygon" />
+        <link rel="icon" href="/logo2.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.0/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#D49000">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#D49000">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#D49000">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap');
+
+            .button_float {
+                transition: all 0.4s ease-in-out;
+                cursor: pointer;
+            }
+
+            .button_float:hover {
+                transform: translateY(-6px);
+            }
+
+            .TESTITEM-highlighted {
+                width: 500px !important;
+                height: 500px !important;
+                margin-bottom: 0px !important;
+            }
+
+            .TESTITEM-slid {
+                padding-left: 891px !important;
+                transition: padding 1s ease-in-out;
+            }
+
+            /* .slick-current {
+                width: calc(30vw + 160px) !important;
+            } */
+
+            .slick-dots li button:before
+            {
+                font-family: 'slick';
+                font-size: 6px;
+                line-height: 20px;
+
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 20px;
+                height: 20px;
+
+                content: '•';
+                text-align: center;
+
+                opacity: .25;
+                color: #BEBCFF;
+
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .slick-dots li.slick-active button:before
+            {
+                opacity: .75;
+                color: white;
+            }
+
+            .slick-slide {
+                margin-top: 25px !important;
+                margin-bottom: 5px !important;
+            }
+
+            .slick-current {
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+
+            }
+
+            .slick-track {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body style="background-color: #1B1B2B; width: 100%; max-width: 100%; overflow-x: hidden; font-family: 'Prompt', sans-serif; max-width: 100%;">
+        <div style="width: 100%; height: fit-content; overflow-x: hidden;">
+            <div style="background-color: #303049; height: 800px; width: 140%; position: absolute; left: -20%; transform: translateY(-50%); border-radius: 50%;"></div>
+        </div>
+        
+        <div style="width: 1200px; height: 50px; margin-left: 50%; transform: translateX(-50%); margin-top: 80px; position: relative;">
+            <h1 style="font-family: 'Prompt', sans-serif; font-weight: bolder; color: white; float: left; margin-right: 6px; letter-spacing: 2px;">Meta</h1>
+            <img src="/logo.png" style="height: 50px; float: left;">
+            <h1 style="font-family: 'Prompt', sans-serif; font-weight: bolder; color: white; float: left; margin-left: 6px; letter-spacing: 2px;">Lads</h1>
+            <div style="position: absolute; top: 0px; right: 0px; height: 50px; width: fit-content;">
+                <h6 style="text-align: center; color: white; letter-spacing: 0.5px; font-size: 14px;">Join the community!</h6>
+                <h2 style="text-align: center; color: white; letter-spacing: 0.5px; margin-top: -8px;"><a href="https://discord.gg/AedcT6AbHx" target="_blank" style="color: white; text-decoration: none; margin-right: 20px;"><i class="fab fa-discord"></i></a><a href="https://twitter.com/metalads" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-twitter"></i></a></h2>
+            </div>
+        </div>
+
+        <div style="width: 1200px; height: 500px; margin-left: 50%; transform: translateX(-50%); position: relative; margin-top: 100px;">
+            <div style="width: 510px; float: left; height: 500px; margin-right: 90px;">
+                <h1 style="color: #BEBCFF; font-size: 50px; font-weight: 700; letter-spacing: 5px;">10,001 MetaLads</h1>
+                <h1 style="color: white; font-size: 40px; font-weight: 400; letter-spacing: 5px; margin-top: -10px;">that are unique and full of personality.</h1>
+                <h6 style="font-size: 17px; color: white; margin-top: 40px; letter-spacing: 2px; line-height: 25px;">MetaLads is a collection of 10,001 randomized and uniquely built 3D Lads with the intention of opening our genesis assets to the public domain.</h6>
+                <h6 style="font-size: 17px; color: white; margin-top: 40px; letter-spacing: 2px; line-height: 25px;">We have so many projects planned out for the future of MetaLads' ecosystem such as our own marketplace, tapping our brand into the mainstream, and more!</h6>
+                <div class="button_float" style="width: 150px; height: 55px; background-color: #E6D510; position: absolute; bottom: 0px; left: 0px; text-align: center; font-weight: 400; letter-spacing: 1px; padding-top: 15px;">View OpenSea</div>
+            </div>
+            <div style=" margin-left: 100px; width: 500px; float: left; height: 500px; text-align: center; position: relative;">
+                <img src="/lad1.png" style="height: 100%;">
+                <img src="/TriangleGem.png" style="width: 90px; height: 80px; position: absolute; transform: rotate(323deg); left: -100px; bottom: 30px;">
+            </div>
+        </div>
+
+        <div id="TESTITEM" style="width: 100%; height: calc(34vw - 38px); margin-left: 50%; transform: translateX(-50%); margin-bottom: 80px; position: relative; margin-top: 170px; text-align: center;">
+            <img src="/ladbg1.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg4.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg2.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg3.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg5.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg1.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg4.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg2.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg3.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+            <img src="/ladbg5.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
+        </div>
+
+        <img src="/gem.png" style="margin-bottom: 20px; width: 90px; height: 87px; transform: rotate(15deg) translate(-50%); margin-left: calc(50% - 555px);">
+
+        <h1 style="font-family: 'Prompt', sans-serif; font-size: 50px; font-weight: bolder; color: #E6D510; text-align: center; letter-spacing: 4px; margin-bottom: 40px;">ROADMAP</h1>
+
+        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+            <img src="/TriangleGem.png" style="position: absolute; width: 90px; height: 80px; top: 50%; right: -140px; transform: translateY(-50%) rotate(300deg);">
+            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #E6D510; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #E6D510; text-align: center; letter-spacing: 6px; text-align: center;">Q1</h1>
+                <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #E6D510;"></div>
+            </div>
+            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+        </div>
+        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q2</h1>
+                <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
+            </div>
+            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+        </div>
+        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q3</h1>
+                <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
+            </div>
+            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+            <img src="/gem.png" style="margin-bottom: 20px; width: 90px; position: absolute; height: 87px; transform: rotate(15deg) translate(-50%); right: 0px; bottom: 5px; transform: rotate(15deg) translateX(65%);">
+        </div>
+        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q4</h1>
+                <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
+            </div>
+            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+        </div>
+        
+        <img src="/TriangleGem.png" style="margin-bottom: 20px; width: 90px; height: 80px; margin-top: 25px; transform: rotate(322deg) translate(-50%); margin-left: calc(50% - 505px);">
+
+        <h1 style="font-family: 'Prompt', sans-serif; background: linear-gradient(to right, #A7A5FF, #E8E8FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: bolder; color: #A7A5FF; text-align: center; letter-spacing: 4px; margin-top: 50px; margin-bottom: 40px;">Meet the Team</h1>
+
+        <div style="width: 1100px; height: 400px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 100px;">
+            <div style="width: 100px; height: 400px; float: left; text-align: center;">
+                <i class="fas fa-chevron-left" style="text-align: center; font-size: 70px; color: white; margin-top: 200px; transform: translateY(-50%);"></i>
+            </div>
+            <div style="width: 900px; height: 400px; float: left; border: 2px solid white;">
+                <img src="/lad2.png" style="height: 350px; margin-top: 25px; margin-left: 50px; padding-right: 50px; border-right: 2px solid white; float: left;">
+                <div style="float: left; margin-top: 35px;  margin-left: 50px; padding-right: 50px;">
+                    <h2 style="color: white; font-size: 45px; letter-spacing: 5px;">Ming</h2>
+                    <h2 style="color: white; font-size: 25px; letter-spacing: 3px; padding-top: 2px;">Lead Artist</h2>
+
+                    <h2 style="color: white; font-size: 35px; letter-spacing: 3px; padding-top: 86px;">Socials</h2>
+                    <h2 style="color: white; font-size: 30px; letter-spacing: 3px; padding-top: 5px;"><a href="https://twitter.com/JoozSippin" target="_blank" style="text-decoration: none; color: white;"><i class="fab fa-twitter"></i> @JoozSippin</a></h2>
+                    <h2 style="color: white; font-size: 30px; letter-spacing: 3px; padding-top: 5px;"><a href="https://discord.bio/p/crazymmg" target="_blank" style="text-decoration: none; color: white;"><i class="fab fa-discord"></i> @i_Ming#4808</a></h2>
+                </div>
+            </div>
+            <div style="width: 100px; height: 400px; float: left; text-align: center;">
+                <i class="fas fa-chevron-right" style="font-size: 70px; color: white; margin-top: 200px; transform: translateY(-50%);"></i>
+            </div>
+        </div>
+
+        <div style="width: 100vw; height: 250px; background-color: #464668;"></div>
+
+        <div style="width: 1200px; height: 350px; margin-left: 50%; transform: translateX(-50%);"></div>
+
+        <script>
+            $('#TESTITEM').slick({
+                centerMode: true,
+                slidesToShow: 3,
+                infinite: true,
+                centerPadding: '60px',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+            });
+        </script>
+    </body>
+</html>
