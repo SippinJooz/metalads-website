@@ -114,6 +114,10 @@
                 width: 870px !important;
             }
 
+            .social-hover {
+                transition: color 0.1s ease-in-out !important;
+            }
+
             .social-hover:hover {
                 color: #D7C5A2 !important;
             }
@@ -130,7 +134,7 @@
             <h1 style="font-family: 'Prompt', sans-serif; font-weight: bolder; color: white; float: left; margin-left: 6px; letter-spacing: 2px;">Lads</h1>
             <div style="position: absolute; top: 0px; right: 0px; height: 50px; width: fit-content;">
                 <h6 style="text-align: center; color: white; letter-spacing: 0.5px; font-size: 14px;">Join the community!</h6>
-                <h2 style="text-align: center; color: white; letter-spacing: 0.5px; margin-top: -8px;"><a href="https://discord.gg/AedcT6AbHx" target="_blank" style="color: white; text-decoration: none; margin-right: 20px;"><i class="fab fa-discord"></i></a><a href="https://twitter.com/metalads" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-twitter"></i></a></h2>
+                <h2 style="text-align: center; color: white; letter-spacing: 0.5px; margin-top: -8px;"><a class="social-hover" href="https://discord.gg/AedcT6AbHx" target="_blank" style="color: white; text-decoration: none; margin-right: 20px;"><i class="fab fa-discord"></i></a><a class="social-hover" href="https://twitter.com/metalads" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-twitter"></i></a></h2>
             </div>
         </div>
 
@@ -140,7 +144,7 @@
                 <h1 style="color: white; font-size: 40px; font-weight: 400; letter-spacing: 5px; margin-top: -10px;">that are unique and full of personality.</h1>
                 <h6 style="font-size: 17px; color: white; margin-top: 40px; letter-spacing: 2px; line-height: 25px;">MetaLads is a collection of 10,001 randomized and uniquely built 3D Lads with the intention of opening our genesis assets to the public domain.</h6>
                 <h6 style="font-size: 17px; color: white; margin-top: 40px; letter-spacing: 2px; line-height: 25px;">We have so many projects planned out for the future of MetaLads' ecosystem such as our own marketplace, tapping our brand into the mainstream, and more!</h6>
-                <div class="button_float" style="width: 150px; height: 55px; background-color: #E6D510; position: absolute; bottom: 0px; left: 0px; text-align: center; font-weight: 400; letter-spacing: 1px; padding-top: 15px;">View OpenSea</div>
+                <a href="https://discord.gg/metalads" target="_blank" style="text-decoration: none;"><div class="button_float" style="width: 150px; height: 55px; background-color: #E6D510; position: absolute; bottom: 0px; left: 0px; text-align: center; font-weight: 400; color: black; letter-spacing: 1px; padding-top: 15px;">View OpenSea</div></a>
             </div>
             <div style=" margin-left: 100px; width: 500px; float: left; height: 500px; text-align: center; position: relative;">
                 <img class="button_float" src="/lad1.png" style="height: 100%;">
@@ -163,7 +167,7 @@
 
         <img class="gem_2" src="/gem.png" style="margin-bottom: 20px; width: 90px; height: 87px; transform: rotate(15deg) translate(-50%); margin-left: calc(50% - 555px);">
 
-        <h1 style="font-family: 'Prompt', sans-serif; font-size: 50px; font-weight: bolder; color: #E6D510; text-align: center; letter-spacing: 4px; margin-bottom: 40px;">ROADMAP</h1>
+        <h1 id="roadmap" style="font-family: 'Prompt', sans-serif; font-size: 50px; font-weight: bolder; color: #E6D510; text-align: center; letter-spacing: 4px; margin-bottom: 40px;">ROADMAP</h1>
 
         <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
             <img src="/TriangleGem.png" class="gem_3" style="position: absolute; width: 90px; height: 80px; top: 50%; right: -140px; transform: translateY(-50%) rotate(300deg);">
@@ -196,9 +200,9 @@
             <div class="roadmap-text" style="width: 850px; margin-top: 1px; height: 200px; transition: all 0.3s ease-in-out; background-color: #464668; float: left;"></div>
         </div>
         
-        <img class="gem_5" src="/TriangleGem.png" style="margin-bottom: 20px; width: 90px; height: 80px; margin-top: 55px; transform: rotate(322deg) translate(-50%); margin-left: calc(50% - 505px);">
+        <img class="gem_5" src="/TriangleGem.png" style="margin-bottom: 20px; width: 90px; height: 80px; margin-top: 35px; transform: rotate(322deg) translate(-50%); margin-left: calc(50% - 505px);">
 
-        <h1 style="font-family: 'Prompt', sans-serif; background: linear-gradient(to right, #A7A5FF, #E8E8FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: bolder; color: #A7A5FF; text-align: center; letter-spacing: 4px; margin-top: 30px; margin-bottom: 40px;">Meet the Team</h1>
+        <h1 id="team" style="font-family: 'Prompt', sans-serif; background: linear-gradient(to right, #A7A5FF, #E8E8FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: bolder; color: #A7A5FF; text-align: center; letter-spacing: 4px; margin-top: 0px; margin-bottom: 40px;">Meet the Team</h1>
 
         <div style="width: 1100px; height: 400px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 100px;">
             <div style="width: 100px; height: 400px; float: left; text-align: center;">
@@ -219,14 +223,34 @@
             </div>
         </div>
 
-        <div style="width: 100vw; height: 250px; background-color: #464668;">
-            <div style="width: 900px; height: 250px; position: relative; margin-left: 50%; transform: translateX(-50%);">
+        <div style="width: 100vw; height: 300px; background-color: #464668;">
+            <div style="width: 1000px; height: 300px; position: relative; margin-left: 50%; transform: translateX(-50%);">
+                <h2 style="color: white; font-size: 45px; letter-spacing: 3px; padding-top: 30px;">Join the Community</h2>
+                <h3 style="color: white; font-size: 20px; letter-spacing: 1px; padding-top: 2px; width: 520px; line-height: 27px;">MetaLads Discord is still a very new community that continues to grow each day! If you want to be part of the #metalads gang, join us and stay updated with our latest announcements!</h2>
+                <a href="https://discord.gg/metalads" target="_blank" style="text-decoration: none;"><div class="button_float" style="width: 180px; height: 55px; background-color: #E6D510; position: absolute; bottom: 22px; left: 0px; text-align: center; font-weight: 400; letter-spacing: 1px; padding-top: 15px; color: black;">Join our Discord</div></a>
+
                 <img class="gem_6" src="gem.png" style="width: 90px; position: absolute; height: 87px; transform: rotate(15deg); top: -43px; right: -150px;">
-                <img src="logo.png" style="height: 90%; position: absolute; top: 5%; right: 0px;">
+                <img src="logo_shadow.png" style="height: 120%; position: absolute; top: -10%; right: 0px;">
             </div>
         </div>
 
-        <div style="width: 1200px; height: 350px; margin-left: 50%; transform: translateX(-50%);"></div>
+        <div style="width: 1200px; height: 270px; margin-left: 50%; transform: translateX(-50%); margin-top: 80px; position: relative;">
+            <h1 style="font-family: 'Prompt', sans-serif; font-weight: bolder; color: white; float: left; margin-right: 6px; letter-spacing: 2px;">Meta</h1>
+            <img src="/logo.png" style="height: 50px; float: left;">
+            <h1 style="font-family: 'Prompt', sans-serif; font-weight: bolder; color: white; float: left; margin-left: 6px; letter-spacing: 2px;">Lads</h1>
+            <h6 style="color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px;">10,001 MetaLads that are unique and full</h6>
+            <h6 style="color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px;">of personality.</h6>
+
+            <h6 style="color: #444465; float: none; clear: both; letter-spacing: 1px; position: absolute; bottom: 60px;">&copy2021 MetaLads. All rights reserved.</h6>
+
+            <div style="height: 270px; width: 300px; position: absolute; right: 0px; bottom: 0px;">
+                <a href="#" style="text-decoration: none;"><h6 class="social-hover" style="color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px; margin-top: 25px;">Home</h6></a>
+                <a href="#roadmap" class="social-hover" style="text-decoration: none;"><h6 class="social-hover" style="color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px; margin-top: 15px;">Roadmap</h6></a>
+                <a href="#team" class="social-hover" style="text-decoration: none;"><h6 class="social-hover" style="color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px; margin-top: 15px;">Team</h6></a>
+
+                <h5 style="position: absolute; bottom: 60px; left: 5px; color: white; float: none; clear: both; letter-spacing: 1px; margin-top: 5px; margin-top: 15px;"><a href="https://discord.gg/AedcT6AbHx" class="social-hover" target="_blank" style="color: white; text-decoration: none; margin-right: 20px;"><i class="fab fa-discord"></i></a><a class="social-hover" href="https://twitter.com/metalads" target="_blank" style="color: white; text-decoration: none;"><i class="fab fa-twitter"></i></a></h5>
+            </div>
+        </div>
 
         <script>
             $('#TESTITEM').slick({
