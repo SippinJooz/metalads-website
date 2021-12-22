@@ -100,6 +100,23 @@
             .slick-track {
                 overflow: hidden;
             }
+
+            .roadmap-section {
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .roadmap-section:hover .roadmap-num {
+                width: 130px !important;
+            }
+
+            .roadmap-section:hover .roadmap-text {
+                width: 870px !important;
+            }
+
+            .social-hover:hover {
+                color: #D7C5A2 !important;
+            }
         </style>
     </head>
     <body style="background-color: #1B1B2B; width: 100%; max-width: 100%; overflow-x: hidden; font-family: 'Prompt', sans-serif; max-width: 100%;">
@@ -126,8 +143,8 @@
                 <div class="button_float" style="width: 150px; height: 55px; background-color: #E6D510; position: absolute; bottom: 0px; left: 0px; text-align: center; font-weight: 400; letter-spacing: 1px; padding-top: 15px;">View OpenSea</div>
             </div>
             <div style=" margin-left: 100px; width: 500px; float: left; height: 500px; text-align: center; position: relative;">
-                <img src="/lad1.png" style="height: 100%;">
-                <img src="/TriangleGem.png" style="width: 90px; height: 80px; position: absolute; transform: rotate(323deg); left: -100px; bottom: 30px;">
+                <img class="button_float" src="/lad1.png" style="height: 100%;">
+                <img class="gem_1" src="/TriangleGem.png" style="width: 90px; height: 80px; position: absolute; left: -100px; bottom: 30px; transform: rotate(323deg);">
             </div>
         </div>
 
@@ -144,44 +161,44 @@
             <img src="/ladbg5.png" style="margin-right: 20px; transition: all 0.3s ease-in-out; margin-bottom: 50px; margin-left: 20px; display: inline-block; white-space: nowrap;">
         </div>
 
-        <img src="/gem.png" style="margin-bottom: 20px; width: 90px; height: 87px; transform: rotate(15deg) translate(-50%); margin-left: calc(50% - 555px);">
+        <img class="gem_2" src="/gem.png" style="margin-bottom: 20px; width: 90px; height: 87px; transform: rotate(15deg) translate(-50%); margin-left: calc(50% - 555px);">
 
         <h1 style="font-family: 'Prompt', sans-serif; font-size: 50px; font-weight: bolder; color: #E6D510; text-align: center; letter-spacing: 4px; margin-bottom: 40px;">ROADMAP</h1>
 
-        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
-            <img src="/TriangleGem.png" style="position: absolute; width: 90px; height: 80px; top: 50%; right: -140px; transform: translateY(-50%) rotate(300deg);">
-            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #E6D510; position: relative;">
-                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #E6D510; text-align: center; letter-spacing: 6px; text-align: center;">Q1</h1>
+        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+            <img src="/TriangleGem.png" class="gem_3" style="position: absolute; width: 90px; height: 80px; top: 50%; right: -140px; transform: translateY(-50%) rotate(300deg);">
+            <div class="roadmap-num" style="width: 150px; height: 202px; transition: all 0.3s ease-in-out; float: left; border-right: 4px solid #E6D510; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #E6D510; text-align: left; letter-spacing: 6px; text-align: left;">Q1</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #E6D510;"></div>
             </div>
-            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+            <div class="roadmap-text" style="width: 850px; margin-top: 1px; transition: all 0.3s ease-in-out; height: 200px; background-color: #464668; float: left;"></div>
         </div>
-        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
-            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
-                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q2</h1>
+        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+            <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q2</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
             </div>
-            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+            <div class="roadmap-text" style="width: 850px; margin-top: 1px; height: 200px; transition: all 0.3s ease-in-out; background-color: #464668; float: left;"></div>
         </div>
-        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
-            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
-                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q3</h1>
+        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+            <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q3</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
             </div>
-            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
-            <img src="/gem.png" style="margin-bottom: 20px; width: 90px; position: absolute; height: 87px; transform: rotate(15deg) translate(-50%); right: 0px; bottom: 5px; transform: rotate(15deg) translateX(65%);">
+            <div class="roadmap-text" style="width: 850px; margin-top: 1px; height: 200px; transition: all 0.3s ease-in-out; background-color: #464668; float: left;"></div>
+            <img class="gem_4" src="/gem.png" style="margin-bottom: 20px; width: 90px; position: absolute; height: 87px; transform: rotate(15deg); right: -45px; bottom: 5px; transform: rotate(15deg) translateX(65%);">
         </div>
-        <div style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
-            <div style="width: 170px; height: 202px; float: left; border-right: 4px solid #FFFFFF; position: relative;">
-                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: center; letter-spacing: 6px; text-align: center;">Q4</h1>
+        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+            <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
+                <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q4</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
             </div>
-            <div style="width: 830px; margin-top: 1px; height: 200px; background-color: #464668; float: left;"></div>
+            <div class="roadmap-text" style="width: 850px; margin-top: 1px; height: 200px; transition: all 0.3s ease-in-out; background-color: #464668; float: left;"></div>
         </div>
         
-        <img src="/TriangleGem.png" style="margin-bottom: 20px; width: 90px; height: 80px; margin-top: 25px; transform: rotate(322deg) translate(-50%); margin-left: calc(50% - 505px);">
+        <img class="gem_5" src="/TriangleGem.png" style="margin-bottom: 20px; width: 90px; height: 80px; margin-top: 55px; transform: rotate(322deg) translate(-50%); margin-left: calc(50% - 505px);">
 
-        <h1 style="font-family: 'Prompt', sans-serif; background: linear-gradient(to right, #A7A5FF, #E8E8FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: bolder; color: #A7A5FF; text-align: center; letter-spacing: 4px; margin-top: 50px; margin-bottom: 40px;">Meet the Team</h1>
+        <h1 style="font-family: 'Prompt', sans-serif; background: linear-gradient(to right, #A7A5FF, #E8E8FF); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 50px; font-weight: bolder; color: #A7A5FF; text-align: center; letter-spacing: 4px; margin-top: 30px; margin-bottom: 40px;">Meet the Team</h1>
 
         <div style="width: 1100px; height: 400px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 100px;">
             <div style="width: 100px; height: 400px; float: left; text-align: center;">
@@ -193,9 +210,8 @@
                     <h2 style="color: white; font-size: 45px; letter-spacing: 5px;">Ming</h2>
                     <h2 style="color: white; font-size: 25px; letter-spacing: 3px; padding-top: 2px;">Lead Artist</h2>
 
-                    <h2 style="color: white; font-size: 35px; letter-spacing: 3px; padding-top: 86px;">Socials</h2>
-                    <h2 style="color: white; font-size: 30px; letter-spacing: 3px; padding-top: 5px;"><a href="https://twitter.com/JoozSippin" target="_blank" style="text-decoration: none; color: white;"><i class="fab fa-twitter"></i> @JoozSippin</a></h2>
-                    <h2 style="color: white; font-size: 30px; letter-spacing: 3px; padding-top: 5px;"><a href="https://discord.bio/p/crazymmg" target="_blank" style="text-decoration: none; color: white;"><i class="fab fa-discord"></i> @i_Ming#4808</a></h2>
+                    <h2 style="color: white; font-size: 35px; letter-spacing: 3px; padding-top: 136px;">Socials</h2>
+                    <h2 style="color: white; font-size: 30px; letter-spacing: 3px; padding-top: 5px;"><a class="social-hover" href="https://twitter.com/JoozSippin" target="_blank" style="text-decoration: none; color: white;"><i class="fab fa-twitter"></i></a><a class="social-hover" href="https://discord.bio/p/i_ming" target="_blank" style="text-decoration: none; color: white; margin-left: 15px;"><i class="fab fa-discord"></i></a></h2>
                 </div>
             </div>
             <div style="width: 100px; height: 400px; float: left; text-align: center;">
@@ -203,7 +219,12 @@
             </div>
         </div>
 
-        <div style="width: 100vw; height: 250px; background-color: #464668;"></div>
+        <div style="width: 100vw; height: 250px; background-color: #464668;">
+            <div style="width: 900px; height: 250px; position: relative; margin-left: 50%; transform: translateX(-50%);">
+                <img class="gem_6" src="gem.png" style="width: 90px; position: absolute; height: 87px; transform: rotate(15deg); top: -43px; right: -150px;">
+                <img src="logo.png" style="height: 90%; position: absolute; top: 5%; right: 0px;">
+            </div>
+        </div>
 
         <div style="width: 1200px; height: 350px; margin-left: 50%; transform: translateX(-50%);"></div>
 
@@ -237,6 +258,20 @@
                     }
                 ]
             });
+
+            window.onscroll = function () {
+                scrollRotate();
+            };
+
+            function scrollRotate() {
+                console.log((window.pageYOffset/7))
+                $(".gem_1").css("transform", "rotate(" + ((window.pageYOffset+1940)/6) + "deg)");
+                $(".gem_2").css("transform", "translate(-50%) rotate(" + ((window.pageYOffset+60)/6) + "deg)");
+                $(".gem_3").css("transform", "translateY(-50%) rotate(" + ((window.pageYOffset+1200)/6) + "deg)");
+                $(".gem_4").css("transform", "rotate(" + ((window.pageYOffset+60)/6) + "deg)");
+                $(".gem_5").css("transform", "rotate(" + ((window.pageYOffset+1200)/6) + "deg)");
+                $(".gem_6").css("transform", "rotate(" + ((window.pageYOffset+60)/6) + "deg)");
+            }
         </script>
     </body>
 </html>
