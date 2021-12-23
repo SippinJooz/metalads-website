@@ -110,12 +110,12 @@
                 transition: all 0.3s ease-in-out;
             }
 
-            .roadmap-section:hover .roadmap-num {
-                width: 130px !important;
+            .roadmap-text-active {
+                width: 870px !important;
             }
 
-            .roadmap-section:hover .roadmap-text {
-                width: 870px !important;
+            .roadmap-num-active {
+                width: 130px !important;
             }
 
             .social-hover {
@@ -172,7 +172,7 @@
 
         <h1 id="roadmap" style="font-family: 'Prompt', sans-serif; font-size: 50px; font-weight: bolder; color: #E6D510; text-align: center; letter-spacing: 4px; margin-bottom: 40px;">ROADMAP</h1>
 
-        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+        <div class="roadmap-section" id="rd1" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
             <img src="/TriangleGem.png" class="gem_3" style="position: absolute; width: 90px; height: 80px; top: 50%; right: -140px; transform: translateY(-50%) rotate(300deg);">
             <div class="roadmap-num" style="width: 150px; height: 202px; transition: all 0.3s ease-in-out; float: left; border-right: 4px solid #E6D510; position: relative;">
                 <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #E6D510; text-align: left; letter-spacing: 6px; text-align: left;">Q1</h1>
@@ -183,7 +183,7 @@
                 <h2 style="font-weight: 200; color: #E6D510; padding-left: 40px; padding-top: 20px; font-size: 20px; width: 820px;">We plan to release all our assets for the Genesis MetaLads collection under the Creative Commons Public Domain License to let the community take full advantage of our Lads, entirely indepdenent from our brand.</h2>
             </div>
         </div>
-        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+        <div class="roadmap-section" id="rd2" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
             <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
                 <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q2</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
@@ -193,7 +193,7 @@
                 <h2 style="font-weight: 200; color: #E6D510; padding-left: 40px; padding-top: 20px; font-size: 20px; width: 820px;">A marketplace will soon be in the works. We want to provide a way for MetaLad owners to fully pimp out their Lads and themselves with accessories from all ends of the MetaVerse, but definitely from within our future collections.</h2>
             </div>
         </div>
-        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
+        <div class="roadmap-section" id="rd3" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px; position: relative;">
             <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
                 <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q3</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
@@ -204,7 +204,7 @@
             </div>
             <img class="gem_4" src="/gem.png" style="margin-bottom: 20px; width: 90px; position: absolute; height: 87px; transform: rotate(15deg); right: -45px; bottom: 5px; transform: rotate(15deg) translateX(65%);">
         </div>
-        <div class="roadmap-section" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+        <div class="roadmap-section" id="rd4" style="width: 1000px; height: 202px; margin-left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
             <div class="roadmap-num" style="width: 150px; height: 202px; float: left; transition: all 0.3s ease-in-out; border-right: 4px solid #FFFFFF; position: relative;">
                 <h1 style="font-family: 'Gothic A1', sans-serif; font-size: 70px; margin-top: 108px; transform: translateY(-50%); font-weight: 900; color: #FFFFFF; text-align: left; letter-spacing: 6px; text-align: left;">Q4</h1>
                 <div style="width: 30px; height: 30px; position: absolute; top: 50%; right: -2px; border-radius: 2px; transform: translate(50%, -50%) rotate(45deg); background-color: #FFFFFF;"></div>
@@ -316,13 +316,45 @@
             };
 
             function scrollRotate() {
-                console.log((window.pageYOffset/7))
                 $(".gem_1").css("transform", "rotate(" + ((window.pageYOffset+1940)/6) + "deg)");
                 $(".gem_2").css("transform", "translate(-50%) rotate(" + ((window.pageYOffset+60)/6) + "deg)");
                 $(".gem_3").css("transform", "translateY(-50%) rotate(" + ((window.pageYOffset+1200)/6) + "deg)");
                 $(".gem_4").css("transform", "rotate(" + ((window.pageYOffset+60)/6) + "deg)");
                 $(".gem_5").css("transform", "rotate(" + ((window.pageYOffset+1200)/6) + "deg)");
                 $(".gem_6").css("transform", "rotate(" + ((window.pageYOffset+60)/6) + "deg)");
+
+                if (window.pageYOffset + window.innerHeight / 2 > window.pageYOffset + document.getElementById('rd4').getBoundingClientRect().top + document.getElementById('rd4').offsetHeight){
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                }
+                else if (window.pageYOffset + window.innerHeight / 2 > window.pageYOffset + document.getElementById('rd4').getBoundingClientRect().top) {
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                    $("#rd4 .roadmap-num").addClass("roadmap-num-active")
+                    $("#rd4 .roadmap-text").addClass("roadmap-text-active")
+                }
+                else if (window.pageYOffset + window.innerHeight / 2 > window.pageYOffset + document.getElementById('rd3').getBoundingClientRect().top) {
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                    $("#rd3 .roadmap-num").addClass("roadmap-num-active")
+                    $("#rd3 .roadmap-text").addClass("roadmap-text-active")
+                }
+                else if (window.pageYOffset + window.innerHeight / 2 > window.pageYOffset + document.getElementById('rd2').getBoundingClientRect().top) {
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                    $("#rd2 .roadmap-num").addClass("roadmap-num-active")
+                    $("#rd2 .roadmap-text").addClass("roadmap-text-active")
+                }
+                else if (window.pageYOffset + window.innerHeight / 2 > window.pageYOffset + document.getElementById('rd1').getBoundingClientRect().top) {
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                    $("#rd1 .roadmap-num").addClass("roadmap-num-active")
+                    $("#rd1 .roadmap-text").addClass("roadmap-text-active")
+                }
+                else {
+                    $(".roadmap-num-active").removeClass("roadmap-num-active")
+                    $(".roadmap-text-active").removeClass("roadmap-text-active")
+                };
             };
 
             function team_slide(direction) {
